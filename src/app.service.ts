@@ -13,4 +13,8 @@ export class AppService {
   getJSONResponse(): any {
     return {'message': 'congratulations now you are receiving a JSON response'};
   }
+
+  postRequest(body: any): any {
+    return body;
+  }
 }
