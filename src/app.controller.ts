@@ -9,4 +9,14 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  @Get('string-response')
+  getEndpoint1(): string {
+    return this.appService.getEndpoint1();
+  }
+
+  @Get('json-response')
+  getJSONResponse(): any {
+    return this.appService.getJSONResponse();
+  }
 }
